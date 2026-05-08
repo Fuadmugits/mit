@@ -1,0 +1,55 @@
+.waButton {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 64px;
+  height: 64px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.waButton:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+}
+
+.toolTip {
+  position: absolute;
+  left: 80px;
+  background: white;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateX(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.waButton:hover .toolTip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .waButton {
+    bottom: 20px;
+    left: 20px;
+    width: 56px;
+    height: 56px;
+  }
+  .toolTip {
+    display: none;
+  }
+}

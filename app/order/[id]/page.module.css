@@ -1,0 +1,266 @@
+.loadingPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 120px 24px 80px;
+  background: var(--off-white);
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.successIcon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.title em { color: var(--rose-gold); }
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--text-medium);
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.orderCode {
+  color: var(--mauve-dark);
+  font-family: 'Courier New', monospace;
+  background: var(--champagne);
+  padding: 3px 10px;
+  border-radius: var(--radius-sm);
+}
+
+/* Payment Card */
+.paymentCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-card);
+  border: 2px solid rgba(200, 150, 126, 0.2);
+  text-align: left;
+}
+
+.paymentHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.paymentHeader span {
+  font-size: 1.8rem;
+}
+
+.paymentHeader h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.paymentDesc {
+  font-size: 0.92rem;
+  color: var(--text-medium);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.accountBox {
+  background: linear-gradient(135deg, var(--blush-light), var(--champagne));
+  border: 1px solid rgba(200, 150, 126, 0.3);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+
+.accountInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.accountLabel {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.accountNum {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--mauve-dark);
+  letter-spacing: 2px;
+  font-family: 'Courier New', monospace;
+}
+
+.accountName {
+  font-size: 0.88rem;
+  color: var(--text-medium);
+  font-weight: 500;
+}
+
+.paymentTotal {
+  font-size: 1rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.paymentTotal strong {
+  color: var(--rose-gold);
+  font-size: 1.2rem;
+}
+
+.paymentNote {
+  font-size: 0.85rem;
+  color: #C0892A;
+  background: rgba(212, 168, 67, 0.1);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(212, 168, 67, 0.2);
+  line-height: 1.6;
+}
+
+/* Order Details */
+.orderDetails {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow-card);
+  text-align: left;
+}
+
+.detailTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.detailGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--nude);
+}
+
+.detailItem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.detailLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 80px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.detailValue {
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.statusBadge {
+  background: rgba(200, 150, 126, 0.1);
+  color: var(--rose-gold-dark);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem !important;
+  font-weight: 600;
+}
+
+.itemsTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--mauve-dark);
+  margin-bottom: 16px;
+}
+
+.orderItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(200,150,126,0.2);
+}
+
+.orderItemTotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0 0;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.orderItemTotal strong {
+  color: var(--rose-gold);
+  font-size: 1.1rem;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.waBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 36px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  letter-spacing: 0.5px;
+}
+
+.waBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3);
+}
